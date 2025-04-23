@@ -1,11 +1,5 @@
 'use client'
 
-interface ShayariCardProps {
-  text: string
-  language: 'hindi' | 'punjabi'
-}
-
-// ShayariCard.tsx
 export default function ShayariCard({ text, language, onRemove }: { text: string, language: string, onRemove?: () => void }) {
   return (
     <div className="relative bg-gray-900 p-4 rounded-md shadow-md text-white">
@@ -22,4 +16,3 @@ export default function ShayariCard({ text, language, onRemove }: { text: string
     </div>
   )
 }
-
